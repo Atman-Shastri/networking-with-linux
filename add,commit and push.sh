@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DATE=$(date + "%dd-%mm-%yyyy")
+DATE=$(date +"%dd-%mm-%yyyy")
 current_time=$(date +"%I:%M:%S %p")
 
 git config user.name "Atman-Shastri"
