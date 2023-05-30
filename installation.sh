@@ -134,7 +134,7 @@ cd ns-allinone-3.32 && ls -l
 echo "Present Working Directory : " "$(pwd)"
 echo -e "\nBuilding Network Simulator....." && sleep 2
 
-./build.py --enable-examples --enable-tests
+./build.py
 
 if [[ "$?" == 0 ]]; then
     echo -e "\nSuccess: Build Complete Successfully......\n"
