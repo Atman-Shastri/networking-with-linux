@@ -2,7 +2,7 @@
 cp .bash_aliases ~
 . ~/.bashrc
 sudo apt update
-sudo apt-get install autojump -y
+sudo apt-get install autojump xclip -y
 echo '. /usr/share/autojump/autojump.sh' >> ~/.bashrc
 . ~/.bashrc
 echo 'export PATH=$PATH:/home/atman/workspace/ns-allinone-3.32/netanim-3.108/' >> ~/.bashrc
