@@ -4,7 +4,8 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/home/atman/workspace/ns-allinone-3.32/ns-3.32/build"
+                "/home/atman/workspace/ns-allinone-3.32/ns-3.32/build/**",
+                "/home/atman/Downloads/build"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
