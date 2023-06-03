@@ -1,6 +1,7 @@
 #!/bin/bash
 touch ~/.bash_aliases
 cat << 'EOF' >> ~/.bash_aliases
+alias inschrome='wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb'
 alias apti='sudo apt-get install -y'
 alias reload='. ~/.bashrc && exec bash'
 alias clip='xargs echo -n | xclip -selection clipboard'
