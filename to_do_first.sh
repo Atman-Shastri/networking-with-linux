@@ -1,7 +1,7 @@
 #!/bin/bash
 touch ~/.bash_aliases
 cat << 'EOF' >> ~/.bash_aliases
-alias apti='sudo apt-get install'
+alias apti='sudo apt-get install -y'
 alias reload='. ~/.bashrc && exec bash'
 alias clip='xargs echo -n | xclip -selection clipboard'
 alias nodemanin='curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash'
