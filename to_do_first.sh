@@ -15,13 +15,32 @@ sh ./Miniconda3-latest-Linux-x86_64.sh -b
 rm Miniconda3-latest-Linux-x86_64.sh
 cat << 'EOF' >> ~/.bashrc
 . /usr/share/autojump/autojump.sh
-export PATH="$PATH:/home/atman/workspace/ns-allinone-3.32/netanim-3.108/"
+export PATH="$PATH:/home/$USER/workspace/ns-allinone-3.32/netanim-3.108/"
 source /etc/bash_completion.d/git-prompt
 export GIT_PS1_SHOWDIRTYSTATE=1
 export PS1='\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 "(%s)")\$ '
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/$USER/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/$USER/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/$USER/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/$USER/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 conda activate py2.7.18
 EOF
 . ~/.bashrc
+conda create -n py2.7.18 -y
+conda activate py2.7.18
+conda install python=2.7.18 -y
+
+
 
 
 
