@@ -1,5 +1,12 @@
 #!/bin/bash
-cp .bash_aliases ~
+touch ~/.bash_aliases
+cat << 'EOF' >> ~/.bash_aliases
+alias apti='sudo apt-get install'
+alias reload='. ~/.bashrc && exec bash'
+alias clip='xargs echo -n | xclip -selection clipboard'
+alias nodemanin='curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash'
+alias pythonmanin='wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && sh ./Miniconda3-latest-Linux-x86_64.sh -b'
+EOF
 sudo apt update
 sudo apt-get install autojump xdotool curl wget xclip -y
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
