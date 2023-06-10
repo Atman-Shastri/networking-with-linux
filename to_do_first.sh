@@ -17,6 +17,7 @@ sudo DEBIAN_FRONTEND=noninteractive \
 rm -rf ./chrome-remote-desktop_current_amd64.deb'
 alias rm='trash -v'
 alias est='progress --monitor --pid $!'
+alias cp='rsync -ah --progress'
 EOF
 sudo apt update
 sudo apt-get install autojump xdotool curl wget xclip trash-cli -y
