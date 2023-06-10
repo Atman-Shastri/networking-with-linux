@@ -14,4 +14,4 @@ sudo DEBIAN_FRONTEND=noninteractive \
 rm -rf ./chrome-remote-desktop_current_amd64.deb
 sudo bash -c 'echo \"exec /etc/X11/Xsession /usr/bin/xfce4-session\" > /etc/chrome-remote-desktop-session'"
 alias rm='trash -v'
-alias est='& progress --monitor --pid $!'
+alias est='progress --monitor --pid $!'
