@@ -15,9 +15,10 @@ curl -L -o chrome-remote-desktop_current_amd64.deb \
 sudo DEBIAN_FRONTEND=noninteractive \
     apt-get install --assume-yes ./chrome-remote-desktop_current_amd64.d>
 rm -rf ./chrome-remote-desktop_current_amd64.deb'
+alias rm='trash -v'
 EOF
 sudo apt update
-sudo apt-get install autojump xdotool curl wget xclip -y
+sudo apt-get install autojump xdotool curl wget xclip trash-cli -y
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 sh ./Miniconda3-latest-Linux-x86_64.sh -b
