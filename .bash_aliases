@@ -13,4 +13,4 @@ sudo DEBIAN_FRONTEND=noninteractive \
     apt-get install --assume-yes ./chrome-remote-desktop_current_amd64.deb
 rm -rf ./chrome-remote-desktop_current_amd64.deb
 sudo bash -c 'echo \"exec /etc/X11/Xsession /usr/bin/xfce4-session\" > /etc/chrome-remote-desktop-session'"
-alias rm='trash -v
+alias rm='trash -v'
