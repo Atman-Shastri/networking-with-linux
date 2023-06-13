@@ -51,7 +51,13 @@ EOF
 conda create -n py2.7.18 -y
 conda activate py2.7.18
 conda install python=2.7.18 -y
-
+wget https://github.com/aristocratos/btop/releases/download/v1.2.13/btop-x86_64-linux-musl.tbz
+tar -xjf btop-x86_64-linux-musl.tbz
+cd btop/
+sudo make install
+sudo make setuid
+cd
+rm -rf btop btop-x86_64-linux-musl.tbz
 
 
 
