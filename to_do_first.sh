@@ -19,6 +19,9 @@ alias rm='trash -v'
 alias est='progress --monitor --pid $!'
 alias cp='rsync -ah --progress'
 alias fzf='fzf | clip'
+alias sudo='sudo '
+alias rmls='trash-list'
+alias rmrs='trash-restore'
 EOF
 sudo apt update
 sudo apt-get install autojump xdotool curl wget xclip trash-cli fzf -y
