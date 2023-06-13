@@ -16,3 +16,4 @@ sudo bash -c 'echo \"exec /etc/X11/Xsession /usr/bin/xfce4-session\" > /etc/chro
 alias rm='trash -v'
 alias est='progress --monitor --pid $!'
 alias cp='rsync -ah --progress'
+alias fzf='fzf | clip'
