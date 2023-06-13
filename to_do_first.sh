@@ -23,6 +23,9 @@ alias sudo='sudo '
 alias rmls='trash-list'
 alias rmrs='trash-restore'
 alias rmemp='trash-empty'
+ns() {
+    sudo ./waf --run $1
+}
 EOF
 sudo apt update
 sudo apt-get install autojump xdotool curl wget xclip trash-cli fzf -y

@@ -21,5 +21,5 @@ alias rmls='trash-list'
 alias rmrs='trash-restore'
 alias rmemp='trash-empty'
 ns() {
-    sudo ./waf --run scratch/$1
+    sudo ./waf --run $1
 }
