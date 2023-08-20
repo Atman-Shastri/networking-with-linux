@@ -27,6 +27,18 @@ alias rmemp='trash-empty'
 ns() {
     sudo ./waf --run $1
 }
+add_users() {
+  for username in "$@"; do
+    sudo useradd -m -G sudo -s /bin/bash "$username"
+    sudo usermod -aG sudo "$username"
+    
+    # Set a default password for each user (change as needed)
+    password="your_default_password"
+    echo -e "$password\n$password" | sudo passwd "$username"
+    
+    echo "$username ALL=(ALL:ALL) ALL" | sudo tee -a /etc/sudoers
+  done
+}
 EOF
 sudo apt update
 sudo apt-get install autojump xdotool curl wget xclip gnome-usage make trash-cli fzf -y
