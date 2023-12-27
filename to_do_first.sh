@@ -3,6 +3,8 @@ echo "$USER ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee "/etc/sudoers.d/dont-prompt-
 touch ~/.bash_aliases
 cat << 'EOF' >> ~/.bash_aliases
 alias inschrome='wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb'
+alias autopoweroff='wget https://github.com/deragon/autopoweroff/releases/download/4.2.0/autopoweroff-gui_4.2.0_all-ubuntu-22.04.deb && wget https://github.com/deragon/autopoweroff/releases/download/4.2.0/autopoweroff-daemon_4.2.0_all-ubuntu-22.04.deb
+&& sudo apt install ./autopoweroff-daemon_4.2.0_all-ubuntu-22.04.deb && sudo apt install ./autopoweroff-gui_4.2.0_all-ubuntu-22.04.deb'
 alias apti='sudo apt-get install -y'
 alias reload='. ~/.bashrc && exec bash'
 alias clip='xargs echo -n | xclip -selection clipboard'
