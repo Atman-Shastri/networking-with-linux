@@ -22,6 +22,7 @@ alias sudo='sudo '
 alias rmls='trash-list'
 alias rmrs='trash-restore'
 alias rmemp='trash-empty'
+alias mongodblink='https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/#std-label-install-mdb-community-ubuntu'
 ns() {
     sudo ./waf --run $1
 }
