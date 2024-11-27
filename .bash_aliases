@@ -1,5 +1,6 @@
 alias inschrome='wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome-stable_current_amd64.deb && rm google-chrome-stable_current_amd64.deb'
 alias apti='sudo apt-get install -y'
+alias reqs='sudo apt-get install -y procps'
 alias reload='. ~/.bashrc && exec bash'
 alias clip='xargs echo -n | xclip -selection clipboard'
 alias nodemanin='curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash'
