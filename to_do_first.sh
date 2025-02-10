@@ -44,7 +44,7 @@ add_users() {
 }
 EOF
 sudo apt update
-sudo apt-get install autojump xdotool curl wget xclip gnome-usage make bat trash-cli fzf glances unzip unrar rclone -y
+sudo apt-get install autojump xdotool curl wget xclip gnome-usage make bat trash-cli fzf glances unzip ncdu unrar rclone -y
 sudo ln -s /usr/bin/batcat /usr/local/bin/bat
 cat << 'EOF' >> ~/.bashrc
 . /usr/share/autojump/autojump.sh
