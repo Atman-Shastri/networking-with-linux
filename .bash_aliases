@@ -26,3 +26,15 @@ alias rmemp='trash-empty'
 alias rmount="rclone mount LOS:laric_online_storage ~/LOS/ &"
 alias busy-ports="lsof -i -P -n | awk 'NR == 1 || /LISTEN/ {print}'"
 alias duplicate-services="sudo find /etc/systemd/system/ /lib/systemd/system/ /usr/lib/systemd/system/ -name '*.service' -print | sort | uniq -d"
+add_users() {
+  for username in "$@"; do
+    sudo useradd -m -G sudo -s /bin/bash "$username"
+    sudo usermod -aG sudo "$username"
+    
+    # Set a default password for each user (change as needed)
+    password="your_default_password"
+    echo -e "$password\n$password" | sudo passwd "$username"
+    
+    echo "$username ALL=(ALL:ALL) ALL" | sudo tee -a /etc/sudoers
+  done
+}
