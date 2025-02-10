@@ -20,6 +20,7 @@ alias wslreboot='cd /mnt/c/ && cmd.exe /c start "rebooting WSL" cmd /c "timeout 
 alias rm='trash -v'
 alias fzf='fzf | clip'
 alias sudo='sudo '
+alias cp='rsync -ah --progress'
 alias rmls='trash-list'
 alias rmrs='trash-restore'
 alias rmemp='trash-empty -f'
