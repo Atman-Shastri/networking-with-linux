@@ -26,6 +26,7 @@ alias rmrs='trash-restore'
 alias rmemp='trash-empty -f'
 alias rmount="rclone mount LOS:laric_online_storage ~/LOS/ &"
 alias busy-ports="lsof -i -P -n | awk 'NR == 1 || /LISTEN/ {print}'"
+alias bash_alias="curl https://raw.githubusercontent.com/Atman-Shastri/networking-with-linux/refs/heads/main/to_do_first.sh"
 alias duplicate-services="sudo find /etc/systemd/system/ /lib/systemd/system/ /usr/lib/systemd/system/ -name '*.service' -print | sort | uniq -d"
 add_users() {
   for username in "$@"; do
