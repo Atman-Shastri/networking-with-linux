@@ -9,7 +9,7 @@ alias reload='. ~/.bashrc && exec bash'
 alias clip='xargs echo -n | xclip -selection clipboard'
 # installations #
 alias uvins='curl -LsSf https://astral.sh/uv/install.sh | sh'
-alias nvmins='curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash'
+alias nodeins='curl -fsSL https://raw.githubusercontent.com/tj/n/master/bin/n | bash -s install lts'
 alias pythonins='wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && sh ./Miniconda3-latest-Linux-x86_64.sh -b'
 alias remotedesktopins='sudo apt update
 curl -L -o chrome-remote-desktop_current_amd64.deb \
