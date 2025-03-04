@@ -40,3 +40,6 @@ add_users() {
     echo "$username ALL=(ALL:ALL) ALL" | sudo tee -a /etc/sudoers
   done
 }
+pd() {
+ps -p "$1" -o pid,etime,comm,lstart
+}
