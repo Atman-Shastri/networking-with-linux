@@ -45,7 +45,7 @@ add_users() {
   done
 }
 pd() {
-ps -p "$1" -o pid,etime,comm,lstar
+ps -p "$1" -o pid,etime,comm,lstart
 }
 EOF
 sudo apt update
